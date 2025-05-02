@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities {
+  .animate-slowSpin {
+    animation: spin 20s linear infinite;
+  }
+
+  .animate-slowSpinReverse {
+    animation: spin-reverse 20s linear infinite;
+  }
+
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+
+ @boxShadow: {
+    avatar-glow: '0 0 60px 20px rgba(128, 90, 213, 0.5)',
+  }
+
+  @custom-variant dark (&:where(.dark, .dark *));
+
+  @layer components {
+  .custom-prose {
+    @apply text-base leading-relaxed text-gray-300 dark:text-gray-200;
+  }
+
+  .custom-prose h1 {
+    @apply text-4xl font-bold mt-8 mb-4 text-white;
+  }
+
+  .custom-prose h2 {
+    @apply text-3xl font-semibold mt-6 mb-3 text-white;
+  }
+
+  .custom-prose h3 {
+    @apply text-2xl font-semibold mt-6 mb-3 text-purple-300;
+  }
+
+  .custom-prose p {
+    @apply mb-4;
+  }
+
+  .custom-prose ul {
+    @apply list-disc list-inside mb-4;
+  }
+
+  .custom-prose a {
+    @apply text-purple-400 underline hover:text-purple-300;
+  }
+
+  .custom-prose strong {
+    @apply font-semibold text-white;
+  }
+
+  .custom-prose img {
+    @apply rounded-lg shadow-lg my-6;
+  }
+}
+
