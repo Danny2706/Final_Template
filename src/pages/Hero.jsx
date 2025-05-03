@@ -28,7 +28,6 @@ const Hero = () => {
       </Helmet>
 
       <section className="relative flex flex-col lg:flex-row h-auto lg:h-screen w-full overflow-hidden">
-        {/* Left Side */}
         <div className="flex-1 bg-[#01252a] dark:bg-[#0f1c1f] flex flex-col justify-center px-6 md:px-16 py-10 space-y-5 text-center lg:text-left">
           <h1 className="text-5xl md:text-7xl font-extrabold text-[#f3e1c1]">
             Hello<span className="text-yellow-300">.</span>
@@ -47,9 +46,7 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Center Section */}
         <div className=" bg-[#f3e1c1] flex flex-col items-center justify-center text-black py-8">
-          {/* Mobile Logo Only */}
           <div className=" text-center mb-4">
             <h1 className="text-2xl font-bold text-[#1a1a1a] dark:text-[#01252a]">
               Bereket Mesefen
@@ -63,7 +60,6 @@ const Hero = () => {
           />
         </div>
 
-        {/* Right Side */}
         <div className="flex-1 bg-[#01252a] dark:bg-[#0f1c1f] flex flex-col justify-center items-center lg:items-start px-6 md:px-16 py-10 space-y-6 text-center lg:text-left">
           <p className="text-md text-[#f3e1c1] max-w-md">
             I am a {profession}. My specialty lies in the pre-production design

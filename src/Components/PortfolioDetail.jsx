@@ -69,7 +69,6 @@ const PortfolioDetail = () => {
             <span>Back to Portfolio</span>
           </Link>
 
-          {/* IMAGE + DESCRIPTION SIDE BY SIDE */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +76,7 @@ const PortfolioDetail = () => {
             viewport={{ once: true }}
             className="flex flex-col md:flex-row gap-10 items-start"
           >
-            {/* IMAGE */}
+        
             <div className="w-full md:w-1/2">
               <img
                 src={`https://carerpro.com/storage/${project.featured_image}`}
@@ -86,7 +85,6 @@ const PortfolioDetail = () => {
               />
             </div>
 
-            {/* DESCRIPTION */}
             <div className="w-full md:w-1/2 flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-4">
                 {project.project_name}
@@ -108,7 +106,6 @@ const PortfolioDetail = () => {
             </div>
           </motion.div>
 
-          {/* VIDEO SECTION */}
           {project.video_link && (
             <div className="mt-12 aspect-video rounded-lg overflow-hidden shadow-lg">
               <iframe
@@ -120,7 +117,6 @@ const PortfolioDetail = () => {
             </div>
           )}
 
-          {/* GALLERY SECTION */}
           {project.project_galleries?.length > 0 && (
             <div className="mt-12">
               <h3 className="text-2xl font-semibold mb-4">Screenshots</h3>

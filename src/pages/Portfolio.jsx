@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useGetProjectsQuery } from "../Services/api";
+import { useGetProjectsQuery } from "../Services/API";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import Footer from "./Footer";
@@ -59,7 +59,7 @@ const Portfolio = () => {
                   isReversed ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* IMAGE */}
+              
                 <div className="w-full md:w-1/2">
                   <img
                     src={`https://carerpro.com/storage/${project.featured_image}`}
@@ -68,7 +68,6 @@ const Portfolio = () => {
                   />
                 </div>
 
-                {/* DESCRIPTION */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center">
                   <p className="text-xs uppercase text-[#f3e1c1] mb-1">
                     Worked Project

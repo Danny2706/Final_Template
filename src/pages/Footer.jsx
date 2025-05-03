@@ -27,7 +27,6 @@ const Footer = () => {
   const { data, isLoading, error } = useGetContactQuery();
   const socials = data?.data?.social_accounts || {};
 
-  // Filter out unwanted keys
   const validPlatforms = Object.entries(socials).filter(
     ([platform, url]) => platform && iconMap[platform.toLowerCase()] && url // must have iconMap key and URL
   );
@@ -35,7 +34,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#f3e1c1] text-black py-4 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        {/* LEFT: CONTACT BUTTON */}
         <Link
           to="/contact"
           className="bg-black text-[#f3e1c1] px-6 py-2 rounded-md hover:bg-gray-500 transition text-center"
@@ -43,7 +41,6 @@ const Footer = () => {
           Contact Me
         </Link>
 
-        {/* RIGHT: SOCIAL ICONS */}
         <div className="flex gap-4 flex-wrap justify-center md:justify-end">
           {isLoading && <p>Loading socials...</p>}
           {error && <p>Error loading socials</p>}

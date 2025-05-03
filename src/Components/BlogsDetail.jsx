@@ -46,7 +46,6 @@ const BlogDetail = () => {
             ← Back to Blogs
           </Link>
 
-          {/* IMAGE + CONTENT SIDE BY SIDE */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +53,6 @@ const BlogDetail = () => {
             viewport={{ once: true }}
             className="flex flex-col md:flex-row items-start gap-10"
           >
-            {/* IMAGE */}
             {blog.featured_image && (
               <div className="w-full md:w-1/2">
                 <img
@@ -65,7 +63,6 @@ const BlogDetail = () => {
               </div>
             )}
 
-            {/* CONTENT */}
             <div className="w-full md:w-1/2 flex flex-col justify-center">
               <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
               <div

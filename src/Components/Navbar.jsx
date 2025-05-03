@@ -7,7 +7,6 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full  top-0 z-20">
-      {/* Desktop layout */}
       <div className="hidden md:flex justify-between items-center px-16 py-6">
         {/* Left Links */}
         <ul className="flex gap-12 text-lg font-medium text-[#f3e1c1]">
@@ -38,9 +37,6 @@ const Navbar = () => {
 
       {/* Mobile layout */}
       <div className="md:hidden flex justify-between items-center px-6 py-4">
-        {/* Left: Empty (no logo here) */}
-
-        {/* Right: Toggle Menu */}
         <button
           className="text-[#f3e1c1] text-2xl z-30"
           onClick={() => setIsOpen(!isOpen)}

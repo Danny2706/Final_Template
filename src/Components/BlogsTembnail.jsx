@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useGetBlogsQuery } from "../Services/api";
+import { useGetBlogsQuery } from "../Services/API";
 
 const stripHtml = (html) => {
   const temp = document.createElement("div");
@@ -35,7 +35,7 @@ const BlogsTembnail = () => {
               i % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
-            {/* IMAGE */}
+       
             <div className="w-full md:w-1/2">
               <img
                 src={`https://carerpro.com/storage/${blog.featured_image}`}
@@ -44,7 +44,6 @@ const BlogsTembnail = () => {
               />
             </div>
 
-            {/* TEXT */}
             <div className="w-full md:w-1/2">
               <p className="text-xs uppercase text-[#f3e1c1] mb-1">Blog Post</p>
               <h4 className="text-2xl font-bold mb-2">{blog.title}</h4>
@@ -61,8 +60,6 @@ const BlogsTembnail = () => {
           </div>
         ))}
       </div>
-
-      {/* All Blogs Button */}
       <div className="flex justify-center mt-8">
         <Link
           to="/blogs"

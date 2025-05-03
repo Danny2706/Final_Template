@@ -41,12 +41,10 @@ const SkillsTembnail = () => {
 
   return (
     <div className="w-full bg-[#01252a] dark:bg-[#0f1c1f] px-4 py-6 rounded-lg shadow-md">
-      {/* Title */}
       <div className="mb-4 px-2">
         <h3 className="text-lg font-bold text-[#f3e1c1]">Top Services</h3>
       </div>
 
-      {/* Slider */}
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 3000 }}
@@ -79,7 +77,6 @@ const SkillsTembnail = () => {
         ))}
       </Swiper>
 
-      {/* Button bottom center */}
       <div className="flex justify-center mt-6">
         <Link
           to="/service"

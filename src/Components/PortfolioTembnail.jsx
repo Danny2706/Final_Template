@@ -37,8 +37,7 @@ const PortfolioTembnail = () => {
       >
         {projects.slice(0, 4).map((project) => (
           <SwiperSlide key={project.id}>
-            <div className="flex flex-col md:flex-row items-center gap-8 px-4">
-              {/* IMAGE LEFT */}
+            <div className="flex flex-col md:flex-row items-center gap-8 px-4">           
               <div className="w-full md:w-1/2">
                 <img
                   src={`https://carerpro.com/storage/${project.featured_image}`}
@@ -46,8 +45,6 @@ const PortfolioTembnail = () => {
                   className="w-full h-56 object-cover rounded"
                 />
               </div>
-
-              {/* DESCRIPTION RIGHT */}
               <div className="w-full md:w-1/2">
                 <p className="text-xs uppercase mb-1">Worked Project</p>
                 <h4 className="text-2xl font-bold mb-2">
@@ -68,7 +65,6 @@ const PortfolioTembnail = () => {
         ))}
       </Swiper>
 
-      {/* View All Button */}
       <div className="flex justify-center mt-8">
         <Link
           to="/portfolio"

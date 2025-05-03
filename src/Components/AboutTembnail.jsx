@@ -22,7 +22,7 @@ const About = () => {
       </Helmet>
 
       <section className="min-h-screen px-6 sm:px-12 md:px-20 py-16 bg-[#01252a] dark:bg-[#0f1c1f] text-white flex flex-col md:flex-row items-center gap-12">
-        {/* Left - Image */}
+
         <div className="relative shadow-lg">
           <img
             src={`https://carerpro.com/storage/${profile.profile_image}`}
@@ -31,8 +31,6 @@ const About = () => {
           />
           <div className="absolute top-0 left-0 w-full h-full border-2 border-dotted border-[#5fc9f3] rounded-md opacity-20"></div>
         </div>
-
-        {/* Right - Content */}
         <div className="flex-1 text-start space-y-6">
           <h4 className="text-sm text-gray-300 tracking-wide uppercase">
             Biography
@@ -51,15 +49,12 @@ const About = () => {
             {profile.about_me ||
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..."}
           </p>
-          {/* Details Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {/* Name */}
             <div className="relative bg-[#2e2e2e] rounded-md px-4 py-3 pl-6 border-l-24 border-[#f3e1c1]">
               <span className="text-sm text-gray-400">Name</span>
               <p className="text-white">{profile.full_name}</p>
             </div>
 
-            {/* Email */}
             <div className="relative bg-[#2e2e2e] rounded-md px-4 py-3 pl-6 border-l-24 border-[#f3e1c1]">
               <span className="text-sm text-gray-400">Email</span>
               <p className="text-white">
@@ -67,7 +62,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Address */}
             <div className="relative bg-[#2e2e2e] rounded-md px-4 py-3 pl-6 border-l-24 border-[#f3e1c1]">
               <span className="text-sm text-gray-400">Address</span>
               <p className="text-white">
@@ -75,14 +69,12 @@ const About = () => {
               </p>
             </div>
 
-            {/* Phone */}
             <div className="relative bg-[#2e2e2e] rounded-md px-4 py-3 pl-6 border-l-24 border-[#f3e1c1]">
               <span className="text-sm text-gray-400">Phone</span>
               <p className="text-white">{profile.phone || "+251925318605"}</p>
             </div>
           </div>
 
-          {/* Download Button */}
           <a
             href={profile.resume || "#"}
             target="_blank"

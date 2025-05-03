@@ -3,7 +3,7 @@ import { useGetServicesQuery } from "../Services/API";
 import { Helmet } from "react-helmet-async";
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css"; // inside JSX:
+import "swiper/css"; 
 import Footer from "./Footer";
 
 const Skills = () => {
@@ -32,7 +32,6 @@ const Skills = () => {
       </Helmet>
 
       <section className="min-h-screen bg-[#01252a] dark:bg-[#0f1c1f] text-[#f3e1c1] px-4 sm:px-10 md:px-20 py-16">
-        {/* ===== WHAT I DO (Skills with Icons + Lines) ===== */}
         <div className="text-center mb-12">
           <h4 className="text-sm tracking-wider uppercase text-[#ccc]">
             Service
@@ -74,7 +73,6 @@ const Skills = () => {
                   </div>
                 ))}
 
-                {/* Vertical lines and dots */}
                 <div className="hidden md:block absolute top-0 bottom-0 left-[-40px] w-[2px] bg-[#f3e1c1]" />
                 <div className="hidden md:block absolute -left-[48px] top-1/2 transform -translate-y-1/2 w-4 h-4 bg-[#f3e1c1] rounded-full" />
 
@@ -87,7 +85,6 @@ const Skills = () => {
               </div>
             ))}
         </div>
-        {/* ===== PRICING SECTION ===== */}
         <div className="text-center my-16">
           <h4 className="text-sm tracking-wider uppercase text-[#ccc]">
             Service
@@ -140,7 +137,6 @@ const Skills = () => {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
               <div className="bg-[#2d3c44] text-white p-8 rounded-lg shadow-md mb-12 flex flex-col md:flex-row items-center">
-                {/* RECTANGULAR IMAGE LEFT */}
                 {testimonial.client_pic && (
                   <img
                     src={`https://carerpro.com/storage/${testimonial.client_pic}`}
@@ -149,7 +145,6 @@ const Skills = () => {
                   />
                 )}
 
-                {/* CONFESSION RIGHT */}
                 <div className="flex-1 text-center md:text-left">
                   <h4 className="font-bold text-lg">
                     {testimonial.client_name}

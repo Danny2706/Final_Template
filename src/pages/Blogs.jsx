@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useGetBlogsQuery } from "../Services/api";
+import { useGetBlogsQuery } from "../Services/API";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import Footer from "./Footer";
@@ -61,7 +61,6 @@ const Blogs = () => {
                     isReversed ? "md:flex-row-reverse" : ""
                   }`}
                 >
-                  {/* IMAGE */}
                   <div className="w-full md:w-1/2">
                     <img
                       src={`https://carerpro.com/storage/${blog.featured_image}`}
@@ -70,7 +69,6 @@ const Blogs = () => {
                     />
                   </div>
 
-                  {/* DESCRIPTION */}
                   <div className="w-full md:w-1/2 flex flex-col justify-center">
                     <p className="text-xs uppercase text-[#f3e1c1] mb-1">
                       Blog Post
